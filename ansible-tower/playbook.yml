@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install vim
+    yum: pkg=vim state=installed
+
+  - name: install htop
+    yum: pkg=htop state=installed
+
+  - name: install tree
+    yum: pkg=tree state=installed
+
+  - name: /etc/hosts
+    template: src=ansiblehosts.j2 dest=/etc/hosts

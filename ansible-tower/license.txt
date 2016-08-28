@@ -1,0 +1,2 @@
+request your tower license here:
+https://www.ansible.com/license
